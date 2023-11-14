@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 
@@ -27,9 +26,7 @@ class MainActivity : AppCompatActivity() {
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             val email = emailInput.editText?.text.toString().trim()
             val password = passwordInput.editText?.text.toString().trim()
-
             button.isEnabled = email.isNotEmpty() && password.isNotEmpty()
-
         }
 
         override fun afterTextChanged(s: Editable?) {}
