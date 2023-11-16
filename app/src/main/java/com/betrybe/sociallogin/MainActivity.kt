@@ -32,10 +32,6 @@ class MainActivity : AppCompatActivity() {
     private fun validateEmail(email: String, editTextEmail: TextInputLayout) {
         val emailPattern = Regex("[a-zA-Z\\d._-]+@[a-z]+\\.+[a-z]+")
 
-        if (!email.matches(emailPattern)) {
-            editTextEmail.error = "Email inválido"
-        } else {
-            editTextEmail.error = null
-        }
+        editTextEmail.error = if (email.matches(emailPattern)) null else "Email inválido"
     }
 }
