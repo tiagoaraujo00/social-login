@@ -39,9 +39,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun validatePassword(password: String, editTextPassword: TextInputLayout) {
         editTextPassword
-            .error = if (password.length >= MAX_USERNAME_SIZE) null else "Senha deve ter mais de 4 caracteres"
+            .error = if (password.length >= MAX_PASSWORD_SIZE) null else "Senha deve ter mais de 4 caracteres"
     }
     companion object {
-        private const val MAX_USERNAME_SIZE = 42
+        private const val MAX_PASSWORD_SIZE = 4
     }
 }
