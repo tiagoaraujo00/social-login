@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         passwordInput.editText?.doOnTextChanged { _, _, _, _ -> loginTextWatcher() }
         button.setOnClickListener {
             val email = emailInput.editText?.text.toString().trim()
+            val password = passwordInput.editText?.text.toString().trim()
             validateEmail(email, emailInput)
+            validatePassword(password, passwordInput)
         }
     }
 
@@ -33,5 +35,9 @@ class MainActivity : AppCompatActivity() {
         val emailPattern = Regex("[a-zA-Z\\d._-]+@[a-z]+\\.+[a-z]+")
 
         editTextEmail.error = if (email.matches(emailPattern)) null else "Email inválido"
+    }
+
+    private fun validatePassword(password: String, editTextPassword: TextInputLayout) {
+        editTextPassword.error = if (password.length >= 4) null else "Senha deve ter mais de 4 caracteres"
     }
 }
