@@ -9,7 +9,7 @@
 <h2>Project Screenshots:</h2>
 
 
-<img src="https://raw.githubusercontent.com/tiagoaraujo00/social-login/main/assets/projeto-login-social.png" alt="project-screenshot" width="700" height="500/">
+<img src="https://raw.githubusercontent.com/tiagoaraujo00/social-login/main/assets/projeto-login-social.png" alt="project-screenshot" width="1000" height="500/">
 
  <br />
 <br />
@@ -37,3 +37,12 @@ Technologies used in the project:
 
 *   Android Studio
 *   Kotlin
+## Authors
+
+- [@tiagoaraujo00](https://github.com/tiagoaraujo00)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tiago-araujo-de-morais/)
